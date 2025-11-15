@@ -14,10 +14,10 @@ $Cred = New-Object System.Management.Automation.PSCredential ($Username, $Secure
 $SshSession = New-SSHSession -ComputerName $CVM_IP -Credential $Cred
 
 # Create Second SSH session to capture hardware info
-$SshSession2 = New-SSHSession -ComputerName $CVM_IP -Credential $Cred
+#$SshSession2 = New-SSHSession -ComputerName $CVM_IP -Credential $Cred
 
 # Create Third SSH session to capture Network information
-$SshSession3 = New-SSHSession -ComputerName $CVM_IP -Credential $Cred
+#$SshSession3 = New-SSHSession -ComputerName $CVM_IP -Credential $Cred
 
 #Also comment out lines 24 & 25 for clusters larger than 5
 # Ethtool & hardware commanda  
