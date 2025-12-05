@@ -226,3 +226,15 @@ def generate_code(prompt):
 # Test it!
 print(generate_code("Write a Python function to reverse a string"))
 
+
+##########################################################################################
+#web front end
+
+import gradio as gr
+# Your inference code above + this:
+demo = gr.Interface(fn=generate_code, inputs="text", outputs="text", title="🐍 My Python SLM")
+demo.launch(share=False)  # http://localhost:7860
+pip install gradio  # If needed
+
+##########################################################################################
+
