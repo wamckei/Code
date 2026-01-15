@@ -16,6 +16,10 @@
 # So the year 2000 is a leap year. 
 
 
+year_choice = int(input("pick a year:  "))
+
+
+
 def is_leap_year(year):
     if year % 4 == 0:
         if year % 100 == 0:
@@ -27,3 +31,5 @@ def is_leap_year(year):
             return True
     else:
         return False
+    
+print(is_leap_year(year_choice))
