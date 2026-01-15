@@ -53,6 +53,7 @@ def compare_score(u_score, d_score):
         return "You Win"
     else:
         return "You Lose"
+    
 def play_game():
 
     user_card = []
